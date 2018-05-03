@@ -3,6 +3,10 @@
   "project": {
     "name": "photo-book"
   },
+  "styles": [
+    "../node_modules/bootstrap/dist/css/bootstrap.css/bootstrap.min.css",
+    "styles.scss"
+  ],
   "apps": [
     {
       "root": "src",

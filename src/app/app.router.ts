@@ -10,6 +10,8 @@ import { PhotoCollectionComponent } from './content/photo-collection/photo-colle
 import {OrdersComponent} from './content/orders/orders.component';
 import {UserManualComponent} from './content/user-manual/user-manual.component';
 import {ProfileComponent} from './content/profile/profile.component';
+import {PricingComponent} from './pricing/pricing.component';
+import {AboutComponent} from './about/about.component';
 
 
 export const router: Routes = [
@@ -19,6 +21,8 @@ export const router: Routes = [
   { path: 'userManual', component: UserManualComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'photoCollection', component: PhotoCollectionComponent},
+  { path: 'pricing', component: PricingComponent},
+  { path: 'about', component: AboutComponent},
   { path: '**', component: AlbumComponent}
 ];
 

@@ -12,22 +12,6 @@ import {AlbumComponent} from '../content/album/album.component';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
-
-  // goProfile() {
-  //   this._router.navigate(['Profile']);
-  // }
-  // goAlbums() {
-  //   this._router.navigate(['Album']);
-  // }
-  // goUserManual() {
-  //   this._router.navigate(['UserManual']);
-  // }
-  // goCollection() {
-  //   this._router.navigate(['PhotoCollection']);
-  // }
-  // goOrders() {
-  //   this._router.navigate(['Orders']);
-  // }
   ngOnInit() {
   }
 

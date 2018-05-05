@@ -8,6 +8,9 @@ import { AlbumComponent } from './content/album/album.component';
 import { PhotoCollectionComponent } from './content/photo-collection/photo-collection.component';
 import { routes } from './app.router';
 import { MenuComponent } from './content/menu/menu.component';
+import { ProfileComponent } from './content/profile/profile.component';
+import { UserManualComponent } from './content/user-manual/user-manual.component';
+import { OrdersComponent } from './content/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MenuComponent } from './content/menu/menu.component';
     ContentComponent,
     AlbumComponent,
     PhotoCollectionComponent,
-    MenuComponent
+    MenuComponent,
+    ProfileComponent,
+    UserManualComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

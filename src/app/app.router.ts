@@ -15,7 +15,8 @@ export const router: Routes = [
   { path: 'orders' , component: AlbumComponent},
   { path: 'userManual', component: AlbumComponent },
   { path: 'profile', component: AlbumComponent },
-  { path: 'photoCollection', component: PhotoCollectionComponent }
+  { path: 'photoCollection', component: PhotoCollectionComponent},
+  { path: '**', component: AlbumComponent}
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

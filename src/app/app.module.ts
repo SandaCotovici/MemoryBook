@@ -7,6 +7,7 @@ import { ContentComponent } from './content/content.component';
 import { AlbumComponent } from './content/album/album.component';
 import { PhotoCollectionComponent } from './content/photo-collection/photo-collection.component';
 import { routes } from './app.router';
+import { MenuComponent } from './content/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { routes } from './app.router';
     HeaderComponent,
     ContentComponent,
     AlbumComponent,
-    PhotoCollectionComponent
+    PhotoCollectionComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

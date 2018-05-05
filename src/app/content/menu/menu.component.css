@@ -1,0 +1,14 @@
+.bs-component {
+  display: block;
+  position: relative;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #78C2AD;;
+}
+a {
+  color: #78C2AD;
+  text-decoration: none;
+  background-color: transparent;
+}

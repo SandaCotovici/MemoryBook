@@ -15,6 +15,9 @@
 body {
   background-color: #fcfcfc;
 }
+.main-content {
+  margin: initial;
+}
 .content {
   padding: 0 2.2em;
 }

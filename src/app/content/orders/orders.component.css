@@ -1,0 +1,14 @@
+body {
+  padding: 0 2em;
+}
+
+h1 {
+  text-align: center;
+  color: #78C2AD;
+}
+.table-suc {
+  background-color: #78C2AD !important;
+}
+.table-header{
+  background-color: #F7BBBE;
+}

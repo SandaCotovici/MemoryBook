@@ -13,6 +13,7 @@ import { OrdersComponent } from './content/orders/orders.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { AboutComponent } from './about/about.component';
 import {MenuComponent} from './menu/menu.component';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MenuComponent} from './menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    routes
+    routes,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

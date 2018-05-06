@@ -1,0 +1,15 @@
+body {
+  padding: 0 2em;
+}
+
+h1 {
+  text-align: center;
+  color: #78C2AD;
+}
+h4 {
+  color: #F3969A;
+  text-decoration: underline;
+}
+.personal-info label, .delivery-adress label {
+  font-size: 1.1em;
+}

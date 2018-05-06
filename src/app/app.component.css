@@ -12,7 +12,9 @@
 /*margin-top: 50px;*/
 /*}*/
 /*}*/
-
+body {
+  background-color: #fcfcfc;
+}
 .content {
   padding: 0 2.2em;
 }

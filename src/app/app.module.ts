@@ -14,6 +14,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { AboutComponent } from './about/about.component';
 import {MenuComponent} from './menu/menu.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import {ImageUploadModule} from 'angular2-image-upload';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
   imports: [
     BrowserModule,
     routes,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    ImageUploadModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

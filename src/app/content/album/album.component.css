@@ -1,0 +1,17 @@
+.button {
+  background-color: #f7c0c2;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 25%;
+  border-color: #c2787b;
+  width: 150px;
+  height: 150px;
+}
+h5 {
+  font-style: italic;
+}

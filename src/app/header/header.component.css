@@ -1,6 +1,9 @@
 .bg-dark {
   background-color: #F3969A !important;
 }
+button.log-out {
+  margin-left: 5px;
+}
 /*body {*/
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   /*padding: 50px 0;*/

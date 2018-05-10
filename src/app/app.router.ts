@@ -12,10 +12,12 @@ import {UserManualComponent} from './content/user-manual/user-manual.component';
 import {ProfileComponent} from './content/profile/profile.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {AboutComponent} from './about/about.component';
+import {HomeComponent} from './home/home.component';
 
 
 export const router: Routes = [
-  { path: '', redirectTo: 'album', pathMatch: 'full'},
+  // { path: '', redirectTo: 'album', pathMatch: 'full'},
+  { path: '', component: HomeComponent},
   { path: 'album', component: AlbumComponent},
   { path: 'orders' , component: OrdersComponent},
   { path: 'userManual', component: UserManualComponent },
@@ -23,7 +25,7 @@ export const router: Routes = [
   { path: 'photoCollection', component: PhotoCollectionComponent},
   { path: 'pricing', component: PricingComponent},
   { path: 'about', component: AboutComponent},
-  { path: '**', component: AlbumComponent}
+  { path: '**', component: HomeComponent}
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

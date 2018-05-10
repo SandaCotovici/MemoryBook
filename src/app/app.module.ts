@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import {MenuComponent} from './menu/menu.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {ImageUploadModule} from 'angular2-image-upload';
+import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import {ImageUploadModule} from 'angular2-image-upload';
     UserManualComponent,
     OrdersComponent,
     PricingComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     routes,
     AngularFontAwesomeModule,
-    ImageUploadModule.forRoot()
+    ImageUploadModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

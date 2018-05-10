@@ -1,0 +1,10 @@
+
+.img-main-carousel {
+  max-height: 400px;
+  margin: 0 auto;
+}.carousel-control.right, .carousel-control.left {
+  cursor: pointer;
+ }
+.carousel-caption{
+  color: darkblue;
+}

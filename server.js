@@ -41,6 +41,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const favicon = require('static-favicon');
+const logger = require('morgan');
+require('./server/models/db');
+
 const http = require('http');
 
 const app = express();
@@ -49,6 +53,8 @@ const app = express();
 const api = require('./server/routes/api');
 
 // Parsers
+app.use(favicon());
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 

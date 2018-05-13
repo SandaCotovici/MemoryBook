@@ -61,6 +61,9 @@ app.use(bodyParser.urlencoded({ extended: false}));
 // Angular DIST output folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
+// angular app is  in src folder, so it has to show static catalog to express
+// app.use(express.static(path.join(__dirname, 'src')));
+
 // API location
 app.use('/api', api);
 

@@ -17,6 +17,11 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {ImageUploadModule} from 'angular2-image-upload';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AuthComponent } from './auth/auth.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LogoutComponent } from './auth/logout/logout.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,14 +36,20 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     OrdersComponent,
     PricingComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    AuthComponent,
+    SigninComponent,
+    SignupComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
     routes,
     AngularFontAwesomeModule,
     ImageUploadModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

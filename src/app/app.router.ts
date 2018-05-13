@@ -13,6 +13,8 @@ import {ProfileComponent} from './content/profile/profile.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {AboutComponent} from './about/about.component';
 import {HomeComponent} from './home/home.component';
+import {AUTH_ROUTES} from './auth/auth.routes';
+import {AuthComponent} from './auth/auth.component';
 
 
 export const router: Routes = [
@@ -25,7 +27,8 @@ export const router: Routes = [
   { path: 'photoCollection', component: PhotoCollectionComponent},
   { path: 'pricing', component: PricingComponent},
   { path: 'about', component: AboutComponent},
-  { path: '**', component: HomeComponent}
+  // { path: '**', component: HomeComponent},
+  { path: 'auth', component: AuthComponent, children: AUTH_ROUTES }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

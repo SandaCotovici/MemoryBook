@@ -1,0 +1,21 @@
+.memories-create {
+  position: relative;
+  top:40%;
+}
+
+.memories-create input.form-control {
+  background: none;
+  border: 2px solid rosybrown;
+  color: rosybrown;
+}
+
+.memories-create-confirm {
+  margin-top:20px;
+}
+
+.memories-create-confirm .btn {
+  background: none;
+  border: 2px solid rosybrown;
+  color: rosybrown;
+  box-shadow: 4px 4px 0 rosybrown
+}

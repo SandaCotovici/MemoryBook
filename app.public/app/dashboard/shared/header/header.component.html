@@ -1,0 +1,72 @@
+
+<!--<div class="bootstrap-vertical-nav">-->
+
+  <!--<button class="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
+    <!--<span class="">Menu</span>-->
+  <!--</button>-->
+
+  <!--<div class="collapse" id="collapseExample">-->
+    <!--<ul class="nav flex-column" id="exCollapsingNavbar3">-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link active" routerLink="profile">Profile</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" routerLink="album" routerLinkActive="active">Albums</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" routerLink="photoCollection">Photo Collection</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+      <!--<a class="nav-link" routerLink="userManual">User manual</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" routerLink="orders">My orders</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+
+<!--</div>-->
+<header>
+  <div class="bs-component">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MemoryBook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/dashboard/home']">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/dashboard/albums']">Albums</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/dashboard/about']">Pricing</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/dashboard/about']">About</a>
+          </li>
+          <li class="nav-item dropdown" routerLinkActive="active">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authentication</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/auth/signin">Sign In</a>
+              <a class="dropdown-item" routerLink="/auth/signup">Sign Up</a>
+              <a class="dropdown-item" routerLink="/auth/logout">Log out</a>
+            </div>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-secondary my-2 my-sm-0 log-out" type="submit">Log out</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+

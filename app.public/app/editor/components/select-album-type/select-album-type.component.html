@@ -1,0 +1,37 @@
+<div class="select-album-type row justify-content-md-center" *ngIf="albumManifest$ | async as manifest">
+  <div class="col-md-auto">
+    <p>Choose album proprieties</p>
+    <hr/>
+    <tabset #staticTabs>
+      <tab heading="Album size & format">
+        <ul>
+          <li *ngFor="let size of manifest.supportedSizes">
+            {{size}}
+          </li>
+        </ul>
+      </tab>
+      <tab heading="Album cover type">
+        
+        <ul>
+          <li *ngFor="let cover of manifest.supportedCoverTypes">
+            {{cover}}
+          </li>
+        </ul>
+      
+      </tab>
+      <tab heading="Album paper material">
+        
+        <ul>
+          <li *ngFor="let paper of manifest.supportedPaperTypes">
+            {{paper}}
+          </li>
+        </ul>
+      
+      </tab>
+    </tabset>
+    <p>
+      <button type="button" class="btn btn-primary btn-sm" (click)="selectTab(1)">---</button>
+      <button type="button" class="btn btn-primary btn-sm" (click)="selectTab(2)">Next step</button>
+    </p>
+  </div>
+</div>

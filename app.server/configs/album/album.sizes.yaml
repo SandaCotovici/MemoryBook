@@ -1,0 +1,15 @@
+- key: SM
+  title: Small
+  description: Some desc
+  width: 15
+  height: 15
+- key: MD
+  title: Medium
+  description: Some desc
+  width: 20
+  height: 15
+- key: LG
+  title: Large
+  description: Some desc
+  width: 30
+  height: 30

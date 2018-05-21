@@ -15,6 +15,7 @@ import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LogoutComponent } from './auth/logout/logout.component';
+import {PricingComponent} from "./pricing/pricing.component";
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { LogoutComponent } from './auth/logout/logout.component';
     AboutComponent,
     HomeComponent,
     AlbumsComponent,
+    PricingComponent
  /* ContentComponent,
     AlbumComponent,
     PhotoCollectionComponent,

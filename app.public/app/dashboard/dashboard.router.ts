@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { MemoriesComponent } from './albums/components/memories/memories.component';
+import {PricingComponent} from "./pricing/pricing.component";
 
 
 export const router: Routes = [
@@ -21,6 +22,7 @@ export const router: Routes = [
           { path: 'memories', component: MemoriesComponent },
           { path: 'photos', component: AboutComponent }
         ]},
+      { path: 'pricing', component: PricingComponent },
       { path: 'about', component: AboutComponent }
     ]
   }

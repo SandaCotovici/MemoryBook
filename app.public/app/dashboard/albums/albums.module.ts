@@ -5,6 +5,9 @@ import { SharedModule } from '../shared/shared.module';
 import { ModalModule } from 'ngx-bootstrap';
 import { MemoriesCreateComponent } from './components/memories-create/memories-create.component';
 import { FormsModule } from '@angular/forms';
+import {UserManualComponent} from './components/user-manual/user-manual.component';
+import {ProfileComponent} from './components/profile/profile.component';
+import {OrdersComponent} from './components/orders/orders.component';
 
 
 @NgModule({
@@ -14,7 +17,13 @@ import { FormsModule } from '@angular/forms';
     ModalModule,
     FormsModule
   ],
-  declarations   : [ MemoriesComponent, MemoriesCreateComponent ],
+  declarations   : [
+    MemoriesComponent,
+    MemoriesCreateComponent,
+    ProfileComponent,
+    UserManualComponent,
+    OrdersComponent,
+  ],
   entryComponents: [ MemoriesCreateComponent ]
 })
 export class AlbumsModule {

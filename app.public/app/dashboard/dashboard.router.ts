@@ -6,7 +6,10 @@ import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { MemoriesComponent } from './albums/components/memories/memories.component';
-import {PricingComponent} from "./pricing/pricing.component";
+import {PricingComponent} from './pricing/pricing.component';
+import {OrdersComponent} from './albums/components/orders/orders.component';
+import {ProfileComponent} from './albums/components/profile/profile.component';
+import {UserManualComponent} from './albums/components/user-manual/user-manual.component';
 
 
 export const router: Routes = [
@@ -20,10 +23,14 @@ export const router: Routes = [
         children: [
           { path: '', redirectTo: 'memories', pathMatch: 'full' },
           { path: 'memories', component: MemoriesComponent },
-          { path: 'photos', component: AboutComponent }
+          { path: 'photos', component: AboutComponent },
+          { path: 'orders', component: OrdersComponent },
+          { path: 'profile', component: ProfileComponent },
+          { path: 'userManual', component: UserManualComponent }
         ]},
       { path: 'pricing', component: PricingComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'about', component: AboutComponent },
+      { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ]
   }
 ];

@@ -4,4 +4,5 @@ export class AlbumSize {
   description: string;
   width: number;
   height: number;
+  img: string;
 }

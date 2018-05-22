@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, '..', 'dist')));
 
 // API location
 app.use('/api', API.ALBUM);
+app.use('/api', API.PHOTOS);
 
 // Send all other requests to the Angular app
 

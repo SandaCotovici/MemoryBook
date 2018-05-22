@@ -5,30 +5,50 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class DataService {
   // TODO Move this to configuration files
-  private albumUrl = 'http://localhost:3000/api/album/';
+  static readonly Endpoints = {
+    album: 'http://localhost:3000/api/album/',
+    photos: 'http://localhost:3000/api/photos/'
+  };
   
   constructor(private http: HttpClient) {
   }
   
+  /*
+  * Album API
+  * */
   getSupportedAlbumSizes(): Observable<any> {
-    const url = this.albumUrl + 'sizes';
+    const url = DataService.Endpoints.album + 'sizes';
     
     return this.http.get(url);
     
   }
   
   getSupportedAlbumCovers(): Observable<any> {
-    const url = this.albumUrl + 'covers';
+    const url = DataService.Endpoints.album + 'covers';
     
     return this.http.get(url);
     
   }
   
   getSupportedAlbumPapers(): Observable<any> {
-    const url = this.albumUrl + 'papers';
+    const url = DataService.Endpoints.album + 'papers';
     
     return this.http.get(url);
+  }
+  
+  
+  /*
+  * Photos API
+  * */
+  addPhoto(): Observable<any> {
+    const url = DataService.Endpoints.photos + 'add';
     
+    const data = {
+      clientId: '1',
+      photo: '222'
+    };
+    
+    return this.http.post(url, data);
   }
   
 }

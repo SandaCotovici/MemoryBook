@@ -1,0 +1,10 @@
+{ 
+    "_id" : ObjectId("5b0396a21e3cce1f2c484e29"), 
+    "clientId" : DBRef("clients", ObjectId("5af70f184a5a1d3890bb589b")), 
+    "title" : "generic", 
+    "maxPages" : 20.0, 
+    "albumWidth" : 20.0, 
+    "albumHeight" : 20.0, 
+    "albumCoverType" : "HARDCOVER", 
+    "albumPaperType" : "SANDPAPER"
+}

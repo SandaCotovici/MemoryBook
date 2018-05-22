@@ -4,24 +4,30 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ButtonsModule, TabsModule } from 'ngx-bootstrap';
 
 import { DataService } from './services/data.service';
+import { PhotosService } from './services/photos.service';
+
 import { CardListComponent } from './components/card-list/card-list.component';
+import { PhotoUploadComponent } from './components/photo-upload/photo-upload.component';
+import { ImageUploadModule } from 'angular2-image-upload';
 
 
 const COMPONENTS = [
-  CardListComponent
+  CardListComponent,
+  PhotoUploadComponent
 ];
 
 @NgModule({
   imports     : [
     CommonModule,
-    TabsModule,
-    ButtonsModule,
     FormsModule,
     ReactiveFormsModule,
+    TabsModule,
+    ButtonsModule,
+    ImageUploadModule
   ],
   exports: COMPONENTS,
   declarations: COMPONENTS,
-  providers   : [ DataService ]
+  providers   : [ DataService, PhotosService ]
 })
 export class SharedModule {
 }

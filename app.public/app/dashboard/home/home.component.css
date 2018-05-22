@@ -1,8 +1,9 @@
 
 .img-main-carousel {
-  max-height: 400px;
+  max-height: 600px;
   margin: 0 auto;
-}.carousel-control.right, .carousel-control.left {
+}
+.carousel-control.right, .carousel-control.left {
   cursor: pointer;
  }
 .carousel-caption{

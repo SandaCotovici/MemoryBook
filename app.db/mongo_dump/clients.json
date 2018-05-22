@@ -1,0 +1,6 @@
+{ 
+    "_id" : ObjectId("5af70f184a5a1d3890bb589b"), 
+    "name" : "Red Jon", 
+    "phone" : "373555555", 
+    "balance" : 500.0
+}

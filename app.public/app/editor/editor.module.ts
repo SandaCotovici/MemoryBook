@@ -9,7 +9,7 @@ import { TabsModule, ButtonsModule } from 'ngx-bootstrap';
 import { SharedModule } from '../shared/shared.module';
 
 import { EditorComponent } from './editor.component';
-import { ImageCollectionComponent } from './components/image-collection/image-collection.component';
+import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { SelectAlbumTypeComponent } from './components/select-album-type/select-album-type.component';
 
@@ -23,7 +23,7 @@ import { editorReducer } from './reducers/editor.reducer';
 
 export const COMPONENTS = [
   EditorComponent,
-  ImageCollectionComponent,
+  PhotoCollectionComponent,
   HeaderMenuComponent,
   SelectAlbumTypeComponent
 ];

@@ -9,11 +9,13 @@ import { PhotosService } from './services/photos.service';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { PhotoUploadComponent } from './components/photo-upload/photo-upload.component';
 import { ImageUploadModule } from 'angular2-image-upload';
+import {PhotoListComponent} from './components/photo-list/photo-list.component';
 
 
 const COMPONENTS = [
   CardListComponent,
-  PhotoUploadComponent
+  PhotoUploadComponent,
+  PhotoListComponent
 ];
 
 @NgModule({

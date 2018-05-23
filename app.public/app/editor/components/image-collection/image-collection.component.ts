@@ -10,15 +10,20 @@ import { PhotosService } from '../../../shared/services/photos.service';
 export class ImageCollectionComponent implements OnInit {
 
   endpointUrl: string;
-  
+
   constructor(private photoService: PhotosService) { }
 
   ngOnInit() {
     this.endpointUrl = PhotosService.endpointUrl + 'add';
+
+    this.getPhotos().subscribe(data => {
+      console.log('all', data);
+    });
+
   }
-  
-  addPhoto() {
-    this.photoService.addPhoto();
+
+  getPhotos() {
+    return this.photoService.getPhotos();
   }
 
 }

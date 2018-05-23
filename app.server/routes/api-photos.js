@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer  = require('multer');
 const PhotosController = require('../controllers/photos.controller');
-const upload = multer({ dest: 'app.storage/' });
+const upload = multer({ dest: 'app.public/assets/user' });
 
 router.post('/photos/add', upload.single('image'), PhotosController.add);
 

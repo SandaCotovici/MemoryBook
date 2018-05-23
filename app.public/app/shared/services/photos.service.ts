@@ -5,7 +5,7 @@ import { DataService } from './data.service';
 export class PhotosService {
 
   static endpointUrl;
-  
+
   constructor(private dataService: DataService) {
     PhotosService.endpointUrl = DataService.Endpoints.photos;
   }
@@ -13,5 +13,9 @@ export class PhotosService {
   addPhoto() {
     this.dataService.addPhoto();
   }
-  
+
+  getPhotos() {
+    return this.dataService.getPhotos().map(data => data.photos);
+  }
+
 }

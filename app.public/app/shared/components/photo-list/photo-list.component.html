@@ -1,11 +1,7 @@
 <section *ngIf="(photos$ | async) as photos">
-
   <ul>
-
-    {{photos}}
     <li *ngFor="let photo of photos">s
-      <img [src]="'assets/user/' + photo.path + '.' + photo.ext.toLowerCase()" alt="">
+      <img [src]="'/assets/user/' + photo.path" alt="">
     </li>
   </ul>
-
 </section>

@@ -20,7 +20,6 @@ class PhotosController {
       const clientsCollection = client.db(dbName).collection('clients');
       const photosCollection = client.db(dbName).collection('photos');
 
-      console.log('file', req.file)
       const originalname = req.file.originalname.split('.');
       const extension = originalname[originalname.length - 1];
 
@@ -76,7 +75,6 @@ class PhotosController {
           res.send({
             photos: items
           });
-
         });
 
       });

@@ -16,6 +16,7 @@ import { ImageUploadModule } from 'angular2-image-upload';
 
 import { EditorModule } from './editor/editor.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -74,7 +75,11 @@ import { metaReducers, reducers } from './store/index';
      * See: https://github.com/ngrx/platform/blob/master/docs/effects/api.md#forroot
      */
     EffectsModule.forRoot([]),
-  
+
+    EditorModule,
+    BsDropdownModule.forRoot()
+
+
   ],
   providers   : [],
   bootstrap   : [ AppComponent ]

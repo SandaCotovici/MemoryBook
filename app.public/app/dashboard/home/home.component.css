@@ -1,11 +1,28 @@
-
+.home-content {
+  width: 100%;
+}
+.carousel-indicators :active {
+  background-color: red !important;
+}
 .img-main-carousel {
-  max-height: 600px;
+  max-height: 700px;
   margin: 0 auto;
+  display: block;
+  width: 100%;
 }
 .carousel-control.right, .carousel-control.left {
   cursor: pointer;
  }
 .carousel-caption{
   color: darkblue;
+}
+.carousel-indicators :active{
+  background-color: #F3969A;
+}
+
+/*.carousel .slide .carousel-indicators li :active {*/
+  /*background-color: #F3969A;*/
+/*}*/
+.carousel-indicators li {
+  background-color: #F3969A;
 }

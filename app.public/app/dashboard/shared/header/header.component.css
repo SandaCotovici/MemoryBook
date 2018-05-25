@@ -1,8 +1,8 @@
 .bg-dark {
   background-color: #F3969A !important;
 }
-button.btn-auth {
-  margin-left: 5px;
+.btn.btn-auth {
+  margin-left: 0.5rem;
 }
 /*body {*/
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/

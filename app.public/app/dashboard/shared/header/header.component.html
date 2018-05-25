@@ -63,16 +63,20 @@
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
           <!--<button class="btn btn-secondary my-2 my-sm-0 log-out" type="submit">Log out</button>-->
 
-          <button id="button-basic" dropdownToggle type="button" class="btn btn-secondary dropdown-toggle btn-auth"
-                  aria-controls="dropdown-basic">
-            Authentication <span class="caret"></span>
+          <div class="btn-group" dropdown>
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-secondary dropdown-toggle btn-auth"
+                    aria-controls="dropdown-basic">
+              Authentication <span class="caret"></span>
+            </button>
             <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
                 role="menu" aria-labelledby="button-basic">
               <li role="menuitem"><a class="dropdown-item" routerLink="/auth/signin">Sign In</a></li>
               <li role="menuitem"><a class="dropdown-item" routerLink="/auth/signup">Sign Up</a></li>
               <li role="menuitem"><a class="dropdown-item" routerLink="/auth/logout">Log out</a></li>
             </ul>
-          </button>
+          </div>
+
+
         </form>
       </div>
     </nav>

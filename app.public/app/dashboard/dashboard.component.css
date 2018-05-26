@@ -4,4 +4,7 @@ body {
 
 .dashboard {
   /*margin-top:20px;*/
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }

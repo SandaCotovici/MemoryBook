@@ -6,6 +6,7 @@ import { EditorComponent } from './editor/editor.component';
 
 export const router: Routes = [
 
+  { path: '', redirectTo: 'dashboard/home', pathMatch: 'full' },
   { path: 'editor', component: EditorComponent },
   { path: '**', component: DashboardComponent }
 ];

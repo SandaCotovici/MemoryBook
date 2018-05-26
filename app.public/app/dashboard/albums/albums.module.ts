@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import {UserManualComponent} from './components/user-manual/user-manual.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {OrdersComponent} from './components/orders/orders.component';
+import {PhotosComponent} from './components/photos/photos.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {OrdersComponent} from './components/orders/orders.component';
     ProfileComponent,
     UserManualComponent,
     OrdersComponent,
+    PhotosComponent
   ],
   entryComponents: [ MemoriesCreateComponent ]
 })

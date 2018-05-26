@@ -78,8 +78,6 @@ import { metaReducers, reducers } from './store/index';
 
     EditorModule,
     BsDropdownModule.forRoot()
-
-
   ],
   providers   : [],
   bootstrap   : [ AppComponent ]

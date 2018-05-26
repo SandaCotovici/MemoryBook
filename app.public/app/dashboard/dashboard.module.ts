@@ -38,7 +38,7 @@ import {PricingComponent} from "./pricing/pricing.component";
     AboutComponent,
     HomeComponent,
     AlbumsComponent,
-    PricingComponent
+    PricingComponent,
  /* ContentComponent,
     AlbumComponent,
     PhotoCollectionComponent,

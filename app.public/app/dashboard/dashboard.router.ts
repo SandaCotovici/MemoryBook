@@ -10,6 +10,8 @@ import {PricingComponent} from './pricing/pricing.component';
 import {OrdersComponent} from './albums/components/orders/orders.component';
 import {ProfileComponent} from './albums/components/profile/profile.component';
 import {UserManualComponent} from './albums/components/user-manual/user-manual.component';
+import {MemoriesCreateComponent} from './albums/components/memories-create/memories-create.component';
+import {PhotosComponent} from './albums/components/photos/photos.component';
 
 
 export const router: Routes = [
@@ -23,7 +25,7 @@ export const router: Routes = [
         children: [
           { path: '', redirectTo: 'memories', pathMatch: 'full' },
           { path: 'memories', component: MemoriesComponent },
-          { path: 'photos', component: AboutComponent },
+          { path: 'photos', component: PhotosComponent },
           { path: 'orders', component: OrdersComponent },
           { path: 'profile', component: ProfileComponent },
           { path: 'userManual', component: UserManualComponent }

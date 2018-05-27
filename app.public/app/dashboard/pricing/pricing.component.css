@@ -2,3 +2,8 @@ h1 {
   text-align: center;
   color: #78C2AD;
 }
+.container-prices {
+  padding-top: 2em;
+  padding-left: 8em;
+  padding-right: 8em;
+}

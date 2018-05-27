@@ -35,10 +35,29 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-2"><button type="button" class="btn btn-outline-success disabled">Edit</button></div>
-          <div class="col-sm-2"><button type="button" class="btn btn-outline-success">Order</button></div>
-          <div class="col-sm-2"><button type="button" class="btn btn-outline-success">Delete</button></div>
+          <!--<div class="col-sm-3"><button type="button" class="btn btn-outline-success disabled">Edit</button></div>-->
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Order</button></div>
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Delete</button></div>
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Download</button></div>
+          <div class="col-sm-3 btn-group" dropdown>
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-outline-success dropdown-toggle"
+                    aria-controls="dropdown-basic">
+              Share on <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu social"
+                role="menu" aria-labelledby="button-basic">
+              <li role="menuitem"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square active"></i>Facebook</a></li>
+              <li role="menuitem"><a href="https://www.facebook.com/"><i class="fa fa-google-plus-official"></i>Google</a></li>
+            </ul>
+          </div>
         </div>
+        <br />
+        <!--<div class="row">-->
+          <!--<div class="col-sm-3"><button type="button" class="btn btn-outline-success">Share on: </button></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square active"></i></a></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-google-plus-official"></i></a></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></div>-->
+        <!--</div>-->
       </div>
       <div class="album-container">
         <li>Summer 2017</li>

@@ -9,6 +9,7 @@ import {UserManualComponent} from './components/user-manual/user-manual.componen
 import {ProfileComponent} from './components/profile/profile.component';
 import {OrdersComponent} from './components/orders/orders.component';
 import {PhotosComponent} from './components/photos/photos.component';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {PhotosComponent} from './components/photos/photos.component';
     CommonModule,
     SharedModule,
     ModalModule,
-    FormsModule
+    FormsModule,
+    BsDropdownModule
   ],
   declarations   : [
     MemoriesComponent,

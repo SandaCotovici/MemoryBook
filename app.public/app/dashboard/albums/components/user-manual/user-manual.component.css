@@ -16,3 +16,26 @@
 h5 {
   font-style: italic;
 }
+.container-manual{
+  padding-top: 4em;
+  padding-left: 3em;
+}
+.arrow-right {
+  font-size: 36px;
+  padding-top: 1.5em;
+  color: #3c6156;
+}
+.col-sm-2 {
+  padding: 0px !important;
+}
+.info-add-comment, .info-make-photo,
+.info-upload-photo, .info-order-book,
+.info-enjoy {
+  padding-right: 2em;
+  padding-left: 2em;
+  /*color: #613c47;*/
+  color: #325148;
+}
+.info-make-photo {
+  padding-top: 2em;
+}

@@ -1,0 +1,19 @@
+.section-signup {
+}
+h1, p {
+  text-align: center;
+  color: #78C2AD;
+}
+input {
+  background-color: #E5E5E5;
+}
+
+.btn-primary {
+  width: 25em;
+}
+label {
+  font-weight: bold;
+}
+.term-cond {
+  font-weight: normal;
+}

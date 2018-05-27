@@ -12,6 +12,10 @@ import {ProfileComponent} from './albums/components/profile/profile.component';
 import {UserManualComponent} from './albums/components/user-manual/user-manual.component';
 import {MemoriesCreateComponent} from './albums/components/memories-create/memories-create.component';
 import {PhotosComponent} from './albums/components/photos/photos.component';
+import {AuthComponent} from './auth/auth.component';
+import {LogoutComponent} from './auth/logout/logout.component';
+import {SigninComponent} from './auth/signin/signin.component';
+import {SignupComponent} from './auth/signup/signup.component';
 
 
 export const router: Routes = [
@@ -32,6 +36,14 @@ export const router: Routes = [
         ]},
       { path: 'pricing', component: PricingComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'auth',
+        component: AuthComponent,
+        children: [
+          { path: '', redirectTo: 'signup', pathMatch: 'full' },
+          { path: 'signup', component: SignupComponent },
+          { path: 'signin', component: SigninComponent },
+          { path: 'logout', redirectTo: 'home', pathMatch: 'full' }
+        ]},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ]
   }

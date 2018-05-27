@@ -40,4 +40,19 @@ html, body {
   border: none;
 }
 
+.select-album-options__modal {
+  width:100%;
+  max-width:100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.select-album-options__modal .modal-content {
+  height:100%;
+}
+
+
 

@@ -1,20 +1,35 @@
-<div class="select-album-type row justify-content-md-center" *ngIf="(albumManifest$ | async) as manifest">
+<div class="select-album-type row justify-content-md-center" *ngIf="(albumManifest$ | async) as albumManifest">
   <div class="w-100 col-md-8">
     <hr/>
     <tabset #staticTabs [justified]="true">
-      <tab heading="Album size & format">
-        <app-card-list [cardList]="mapSupportedSizesToCardList(manifest.supportedSizes)"
-                       (onSelectCard)="onSelectSize($event)"></app-card-list>
+      <tab [id]="tabs.TAB_SIZE" heading="Album size & format" (select)="onSelectTab($event)">
+        <app-card-list [cardList]="mapSupportedSizesToCardList(albumManifest.supportedSizes)"
+                       (onSelectCard)="onSelectSizeCard($event)"></app-card-list>
       </tab>
-      <tab heading="Album cover type">
-        <app-card-list [cardList]="mapSupportedCoverToCardList(manifest.supportedCoverTypes)"
-                       (onSelectCard)="onSelectCover($event)"></app-card-list>
+      <tab [id]="tabs.TAB_COVER" [disabled]="true" heading="Album cover type" (select)="onSelectTab($event)">
+        <app-card-list [cardList]="mapSupportedCoverToCardList(albumManifest.supportedCoverTypes)"
+                       (onSelectCard)="onSelectCoverCard($event)"></app-card-list>
       </tab>
-      <tab heading="Album paper material">
-        <app-card-list [cardList]="mapSupportedPaperToCardList(manifest.supportedPaperTypes)"
-                       (onSelectCard)="onSelectPaper($event)"
-        ></app-card-list>
+      <tab [id]="tabs.TAB_PAPER" [disabled]="true" heading="Album paper material" (select)="onSelectTab($event)">
+        <app-card-list [cardList]="mapSupportedPaperToCardList(albumManifest.supportedPaperTypes)"
+                       (onSelectCard)="onSelectPaperCard($event)"></app-card-list>
       </tab>
     </tabset>
+    <hr/>
+  </div>
+  <div class="w-100 col-md-8">
+    <button type="button" class="btn btn-outline-primary btn-sm" (click)="go('PREV')"
+            *ngIf="selectedTabId !== tabs.TAB_SIZE">
+      Back
+    </button>
+    <button type="button" class="btn btn-outline-primary btn-sm" (click)="go('NEXT')"
+            *ngIf="selectedTabId !== tabs.TAB_PAPER; else submitBtnBlock">
+      Next
+    </button>
+    <ng-template #submitBtnBlock>
+      <button type="button" class="btn btn-outline-primary btn-sm" (click)="submitSelectedAlbumManifest()">
+        Done
+      </button>
+    </ng-template>
   </div>
 </div>

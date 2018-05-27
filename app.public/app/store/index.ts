@@ -79,3 +79,7 @@ export const getEditorState = createFeatureSelector<fromEditor.State>('editor');
 export const getEditorIsLoaded = createSelector(getEditorState, fromEditor.getEditorIsLoaded);
 export const getEditorAlbum = createSelector(getEditorState, fromEditor.getEditorAlbum);
 export const getEditorAlbumManifest = createSelector(getEditorState, fromEditor.getEditorAlbumManifest);
+
+// Layout
+export const getEditorAlbumOptionsPanelState = createSelector(getEditorState, fromEditor.getEditorAlbumOptionsPanelState);
+

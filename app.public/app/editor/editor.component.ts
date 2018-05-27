@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EditorService } from './services/editor.service';
+import { Observable } from 'rxjs/Observable';
+import { EditorLayoutService } from './services/editor-layout.service';
 
 
 @Component({
@@ -9,7 +11,10 @@ import { EditorService } from './services/editor.service';
 })
 export class EditorComponent implements OnInit {
   
-  constructor(private editorService: EditorService) {
+  isEditorAlbumOptionsPanelShown$: Observable<boolean>;
+  
+  constructor(private editorService: EditorService,
+              private editorLayoutService: EditorLayoutService) {
   }
   
   

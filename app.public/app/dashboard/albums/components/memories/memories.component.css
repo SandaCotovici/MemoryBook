@@ -5,3 +5,19 @@ ul {
 li {
   font-size: 2em;
 }
+.album-image {
+  /*max-height: 150px;*/
+}
+.album-container {
+  padding: 1em 2.5em;
+  border: 0.1em solid #a9b2bc;
+  margin-top: 0.9em;
+}
+.btn-outline-success {
+  color: #78C2AD;
+  border-color: #78C2AD;
+}
+.btn-outline-success:hover {
+  background-color: #78C2AD;
+  color: #fff;
+}

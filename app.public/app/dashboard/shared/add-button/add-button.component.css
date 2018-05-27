@@ -1,3 +1,8 @@
+.add-album {
+  padding-top: 10em;
+  padding-left: 2em;
+}
+
 .add-button {
   width:120px;
   height:auto;
@@ -8,4 +13,11 @@
 
 .add-button:hover {
   opacity:1;
+}
+h2 {
+  color: #F3969A;
+  /*color: #78C2AD;*/
+}
+img.add-img {
+  padding-left: 6em;
 }

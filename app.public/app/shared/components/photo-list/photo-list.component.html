@@ -1,0 +1,7 @@
+<section *ngIf="(photos$ | async) as photos">
+  <div class="card-columns">
+    <div class="card" *ngFor="let photo of photos">
+      <img class="card-img-top" [src]="photo.path" alt="Card image cap">
+    </div>
+  </div>
+</section>

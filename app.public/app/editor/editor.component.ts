@@ -10,16 +10,16 @@ import { EditorLayoutService } from './services/editor-layout.service';
   styleUrls  : [ './editor.component.css' ]
 })
 export class EditorComponent implements OnInit {
-  
+
   isEditorAlbumOptionsPanelShown$: Observable<boolean>;
-  
+
   constructor(private editorService: EditorService,
               private editorLayoutService: EditorLayoutService) {
   }
-  
-  
+
+
   ngOnInit() {
     this.editorService.loadEditor();
   }
-  
+
 }

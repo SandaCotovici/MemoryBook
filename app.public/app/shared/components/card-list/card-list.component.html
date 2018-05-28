@@ -1,7 +1,7 @@
 <div class="card-deck" btnRadioGroup [(ngModel)]="selectedCard">
   <div class="card" *ngFor="let card of cardList" [ngClass]="{'card__btn--active': selectedCard === card.key}">
     <div btnRadio="{{card.key}}" tabindex="{{card.key}}" role="button" (click)="onSelectCardAction(card)">
-      <img class="card-img-top" src="{{card.imgUrl}}" alt="Card image cap">
+      <img class="card-img-top" [src]="card.img" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">{{card.title}}</h4>
         <h6 class="card-subtitle mb-2 text-muted">{{card.subtitle}}</h6>

@@ -23,7 +23,7 @@ export class LoadingFinished implements Action {
 
 export class SetupAlbumManifest implements Action {
   readonly type = EditorActionsTypes.SetupAlbumManifest;
-  
+
   constructor(public payload: AlbumManifest) {}
 }
 
@@ -32,7 +32,7 @@ export class SetupAlbumManifest implements Action {
 * */
 export class StoreSelectedAlbumOptions implements Action {
   readonly type = EditorActionsTypes.StoreSelectedAlbumOptions;
-  
+
   constructor(public payload: AlbumSelectedOptions) {}
 }
 
@@ -42,7 +42,7 @@ export class StoreSelectedAlbumOptions implements Action {
 
 export class LayoutToggleAlbumOptionsPanel implements Action {
   readonly type = EditorActionsTypes.LayoutToggleAlbumOptionsPanel;
-  
+
   constructor(public payload: boolean) {}
 }
 

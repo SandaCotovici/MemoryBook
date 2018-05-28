@@ -1,15 +1,18 @@
 - key: SM
-  title: Small
+  title: Square
   description: Some desc
   width: 15
   height: 15
+  img: https://celebook.md/public/images/21x21.jpg
 - key: MD
-  title: Medium
+  title: Landscape
   description: Some desc
   width: 20
   height: 15
+  img: https://celebook.md/public/images/21x14.jpg
 - key: LG
-  title: Large
+  title: Portrait
   description: Some desc
   width: 30
   height: 30
+  img: https://celebook.md/public/images/30x20.jpg

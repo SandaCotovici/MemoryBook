@@ -6,7 +6,7 @@ export class Album {
   cover: any;
   pages: any;
   options: AlbumSelectedOptions = new AlbumSelectedOptions();
-  
+
   public constructor(init?: Partial<Album>) {
     Object.assign(this, init);
   }

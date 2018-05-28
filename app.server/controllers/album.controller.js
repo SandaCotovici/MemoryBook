@@ -23,10 +23,6 @@ class AlbumController {
     });
   }
 
-  addPhoto() {
-
-  }
-
 }
 
 module.exports = new AlbumController();

@@ -1,0 +1,18 @@
+- key: PAPER_BOND
+  title: Bond paper
+  description: Some desc
+- key: PAPER_GLOSS_COATED
+  title: Gloss coated paper
+  description: Some desc
+- key: PAPER_MATT_COATED
+  title: Matt coated paper
+  description: Some desc
+- key: PAPER_RECYCLED
+  title: Recycled paper
+  description: Some desc
+- key: PAPER_COATED
+  title: Silk coated paper
+  description: Some desc
+- key: PAPER_UNCOATED
+  title: Uncoated paper
+  description: Some desc

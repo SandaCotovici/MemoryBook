@@ -1,0 +1,9 @@
+- key: HARDCOVER
+  title: Hardcover
+  description: Some desc
+- key: PAPERBACK
+  title: Paperback
+  description: Some desc
+- key: ELEGANT
+  title: Elegant
+  description: Some desc

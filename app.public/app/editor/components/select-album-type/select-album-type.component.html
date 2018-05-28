@@ -1,0 +1,20 @@
+<div class="select-album-type row justify-content-md-center" *ngIf="(albumManifest$ | async) as manifest">
+  <div class="w-100 col-md-8">
+    <hr/>
+    <tabset #staticTabs [justified]="true">
+      <tab heading="Album size & format">
+        <app-card-list [cardList]="mapSupportedSizesToCardList(manifest.supportedSizes)"
+                       (onSelectCard)="onSelectSize($event)"></app-card-list>
+      </tab>
+      <tab heading="Album cover type">
+        <app-card-list [cardList]="mapSupportedCoverToCardList(manifest.supportedCoverTypes)"
+                       (onSelectCard)="onSelectCover($event)"></app-card-list>
+      </tab>
+      <tab heading="Album paper material">
+        <app-card-list [cardList]="mapSupportedPaperToCardList(manifest.supportedPaperTypes)"
+                       (onSelectCard)="onSelectPaper($event)"
+        ></app-card-list>
+      </tab>
+    </tabset>
+  </div>
+</div>

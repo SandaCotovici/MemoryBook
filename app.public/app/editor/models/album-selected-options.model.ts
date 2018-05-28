@@ -1,9 +1,9 @@
-export class AlbumSelected {
+export class AlbumSelectedOptions {
   size: string;
   cover: string;
   paper: string;
   
-  public constructor(init?: Partial<AlbumSelected>) {
+  constructor(init?: Partial<AlbumSelectedOptions>) {
     Object.assign(this, init);
   }
 }

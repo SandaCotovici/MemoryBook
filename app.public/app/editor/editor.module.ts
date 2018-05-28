@@ -12,20 +12,27 @@ import { EditorComponent } from './editor.component';
 import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { SelectAlbumTypeComponent } from './components/select-album-type/select-album-type.component';
+import { ToolboxComponent } from './components/toolbox/toolbox.component';
+import { AlbumCanvasComponent } from './components/album-canvas/album-canvas.component';
 
-import { EditorDataService } from './services/editor-data.service';
 import { EditorService } from './services/editor.service';
+import { EditorDataService } from './services/editor-data.service';
+import { EditorLayoutService } from './services/editor-layout.service';
 
 import { EditorEffects } from './effects/editor.effects';
 
 import { editorReducer } from './reducers/editor.reducer';
 
 
+
+
 export const COMPONENTS = [
   EditorComponent,
   PhotoCollectionComponent,
   HeaderMenuComponent,
-  SelectAlbumTypeComponent
+  SelectAlbumTypeComponent,
+  ToolboxComponent,
+  AlbumCanvasComponent
 ];
 
 
@@ -43,7 +50,11 @@ export const COMPONENTS = [
   declarations: COMPONENTS,
   providers   : [
     EditorService,
-    EditorDataService
+    EditorDataService,
+    EditorLayoutService
+  ],
+  entryComponents: [
+    SelectAlbumTypeComponent
   ]
 })
 export class EditorModule {

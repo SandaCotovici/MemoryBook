@@ -25,7 +25,7 @@ class PhotosController {
         test.equal(null, err);
 
         const dbResult = items[0];
-        photosCollection.insert({clientId: dbResult._id, tag: 'AAA', path: req.file.filename}).then((err, result) => {
+        photosCollection.insertOne({clientId: dbResult._id, tag: 'AAA', path: req.file.filename}).then((err, result) => {
 
           const response = new GenericResponse({
             msg: 'SUCCESS',

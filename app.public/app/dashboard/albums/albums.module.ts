@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MemoriesComponent } from './components/memories/memories.component';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
+import { DashboardSharedModule } from '../shared/dashboard-shared.module';
 import { ModalModule } from 'ngx-bootstrap';
 import { MemoriesCreateComponent } from './components/memories-create/memories-create.component';
 import { FormsModule } from '@angular/forms';
@@ -16,6 +17,7 @@ import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
   imports        : [
     CommonModule,
     SharedModule,
+    DashboardSharedModule,
     ModalModule,
     FormsModule,
     BsDropdownModule

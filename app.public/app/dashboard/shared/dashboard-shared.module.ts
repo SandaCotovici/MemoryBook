@@ -3,7 +3,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { AddButtonComponent } from './add-button/add-button.component';
-import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 
 @NgModule({
   imports: [
@@ -20,4 +21,4 @@ import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
     AddButtonComponent
   ]
 })
-export class SharedModule { }
+export class DashboardSharedModule { }

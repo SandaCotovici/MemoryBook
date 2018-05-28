@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './albums/components/menu/menu.component';
-import { SharedModule } from './shared/shared.module';
+import { DashboardSharedModule } from './shared/dashboard-shared.module';
 import { AlbumsModule } from './albums/albums.module';
 import { Dashboard } from './dashboard.router';
 import { DashboardComponent } from './dashboard.component';
@@ -22,7 +22,7 @@ import {PricingComponent} from "./pricing/pricing.component";
   imports     : [
     CommonModule,
     CarouselModule,
-    SharedModule,
+    DashboardSharedModule,
     AlbumsModule,
     Dashboard.ROUTES,
     FormsModule,

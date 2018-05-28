@@ -1,18 +1,24 @@
 - key: PAPER_BOND
   title: Bond paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg
 - key: PAPER_GLOSS_COATED
   title: Gloss coated paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg
 - key: PAPER_MATT_COATED
   title: Matt coated paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg
 - key: PAPER_RECYCLED
   title: Recycled paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg
 - key: PAPER_COATED
   title: Silk coated paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg
 - key: PAPER_UNCOATED
   title: Uncoated paper
   description: Some desc
+  img: https://cdn-files.cloud/wp-content/blogs.dir/94/files/2017/10/PB_Gloss-Matt_update-150x150.jpg

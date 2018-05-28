@@ -1,9 +1,12 @@
 - key: HARDCOVER
   title: Hardcover
   description: Some desc
+  img: https://www.choice.com.au/Assets/Choice/imgs/product/officeworks-8x11-hard-cover-photo-book_1.JPG?w=696&h=391&jq=80
 - key: PAPERBACK
   title: Paperback
   description: Some desc
+  img: https://s3.envato.com/files/211542943/Preview%20Image%20Set/Cover%20Preview.jpg
 - key: ELEGANT
-  title: Elegant
+  title: Handmade
   description: Some desc
+  img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgEsieIHLlBTpriTp-ZzhKyF02n6arWn-otnYitHrSR2gs6nY

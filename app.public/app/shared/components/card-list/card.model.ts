@@ -3,8 +3,8 @@ export class CardItem {
   title: string;
   subtitle: string;
   description: string;
-  imgUrl: string;
-  
+  img: string;
+
   public constructor(init?: Partial<CardItem>) {
     Object.assign(this, init);
   }

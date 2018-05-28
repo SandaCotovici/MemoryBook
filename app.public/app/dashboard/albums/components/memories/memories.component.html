@@ -1,10 +1,106 @@
 <div class="row">
   <div class="col-md-6">
-    
-    List of all created memory books
-    
+    <ul>
+      <div class="album-container">
+        <li>Our Day</li>
+        <br />
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="album-image" src="../../../../../assets/images/album2.png" alt="Album Cover">
+          </div>
+          <div class="col-sm-6">
+            <table class="table details-order">
+              <thead class="table-header">
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Landscape</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="table-suc">
+                <th scope="row">Dimensions</th>
+                <td>15 x 20</td>
+              </tr>
+              <tr class="table-suc">
+                <th scope="row">Cover type</th>
+                <td>Handmade</td>
+              </tr>
+              <tr class="table-suc">
+                <th scope="row">Paper type</th>
+                <td>Glynce</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <!--<div class="col-sm-3"><button type="button" class="btn btn-outline-success disabled">Edit</button></div>-->
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Order</button></div>
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Delete</button></div>
+          <div class="col-sm-3"><button type="button" class="btn btn-outline-success">Download</button></div>
+          <div class="col-sm-3 btn-group" dropdown>
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-outline-success dropdown-toggle"
+                    aria-controls="dropdown-basic">
+              Share on <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu social"
+                role="menu" aria-labelledby="button-basic">
+              <li role="menuitem"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square active"></i>Facebook</a></li>
+              <li role="menuitem"><a href="https://www.facebook.com/"><i class="fa fa-google-plus-official"></i>Google</a></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <!--<div class="row">-->
+          <!--<div class="col-sm-3"><button type="button" class="btn btn-outline-success">Share on: </button></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square active"></i></a></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-google-plus-official"></i></a></div>-->
+          <!--<div class="col-sm-3"><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a></div>-->
+        <!--</div>-->
+      </div>
+      <div class="album-container">
+        <li>New album</li>
+        <br />
+        <div class="row">
+          <div class="col-sm-6">
+            <!--<img class="album-image" src="https://media.celebook.ro/ECommerceBridge/lib/packages/mediaclip/photobooks/themes/modern-blackwhite/previews/page-01/file?format=%7b__type%3a%22Mediaclip.Library.Api.Domain.Model.PhotobookFormat%2c+Mediaclip.Library.Api%22%2cpages%3a%7bwidth%3a2481%2cheight%3a1749%2cbleed%3a35%2cminSheetCount%3a14%2cmaxSheetCount%3a60%2cblockSheetCount%3a1%2cprintableEndpapers%3aFalse%7d%2ccover%3a%7bprintable%3aTrue%2cwidth%3a2563%2cheight%3a1819%2cbleed%3a272%2cspineWidth%3a%22range%3a+%5b0-19%3a+80%3b+20-50%3a+80%3b+51-100%3a+133%3b+101-150%3a+210%3b+151-200%3a+239%3b+201-250%3a+292%3b+251-300%3a+345%5d%22%7d%7d&culture=en-CA" alt="">-->
+            <img class="album-image" src="../../../../../assets/images/album2.png" alt="Album Cover">
+          </div>
+          <div class="col-sm-6">
+            <table class="table details-order">
+              <thead class="table-header">
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Landscape</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="table-suc">
+                <th scope="row">Dimensions</th>
+                <td>15 x 20</td>
+              </tr>
+              <tr class="table-suc">
+                <th scope="row">Cover type</th>
+                <td>Handmade</td>
+              </tr>
+              <tr class="table-suc">
+                <th scope="row">Paper type</th>
+                <td>Glynce</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"><button type="button" class="btn btn-outline-success disabled">Edit</button></div>
+          <div class="col-sm-2"><button type="button" class="btn btn-outline-success">Order</button></div>
+          <div class="col-sm-2"><button type="button" class="btn btn-outline-success">Delete</button></div>
+        </div>
+      </div>
+    </ul>
   </div>
-  <div class="col-md-6">
+
+  <div class="col-md-6" style="padding-left: 3rem">
     <app-add-button
       (actionCallback)="createMemoryBook($event)"
     ></app-add-button>

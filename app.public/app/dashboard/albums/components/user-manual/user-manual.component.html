@@ -1,0 +1,93 @@
+<!--<button type="button" class="btn btn-light btn-lg">Light</button>-->
+<!--<div class="row">-->
+  <!--<div class="col-sm-4">-->
+    <!--<button type="button" class="button btn-lg"><i class="fa fa-camera-retro" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Make some photos</h5>-->
+  <!--</div>-->
+  <!--<div class="col-sm-4">-->
+    <!--<button type="button" class="button btn-lg"><i class="fa fa-cloud-upload" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Upload in our application</h5>-->
+  <!--</div>-->
+  <!--<div class="col-sm-4">-->
+    <!--<button type="button" class="button btn-lg"><i class="fa fa-comments" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Add some comments</h5>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<br />-->
+<!--<br />-->
+<!--<div class="row justify-content-around">-->
+  <!--<div class="col-sm-4">-->
+    <!--<button type="button" class="button btn-lg"><i class="fa fa-image" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Order a photobook</h5>-->
+  <!--</div>-->
+  <!--<div class="col-sm-4">-->
+    <!--<button type="button" class="button btn-lg"><i class="fa fa-smile-o" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Enjoy the photobook and memories which it keeps</h5>-->
+  <!--</div>-->
+<!--</div>-->
+<h5 style="color:#613c47">P.S If you want to see more details, please touch the buttons.</h5>
+<div class="row container-manual">
+  <div class="col-sm-2"><button type="button" class="button btn-lg" (click)="onSelect1()"><i class="fa fa-camera-retro" style="font-size:72px;color:#548779;"></i></button>
+    <h5>Make some photos</h5></div>
+    <div class="arrow-right"><i class="fa fa-arrow-right"></i></div>
+  <div><button type="button" class="button btn-lg" (click)="onSelect2()"><i class="fa fa-cloud-upload" style="font-size:72px;color:#548779;"></i></button>
+    <h5>Upload photos in app</h5></div>
+  <div class="arrow-right"><i class="fa fa-arrow-right"></i></div>
+  <div class="col-sm-2"><button type="button" class="button btn-lg" (click)="onSelect3()"><i class="fa fa-comments" style="font-size:72px;color:#548779;"></i></button>
+    <h5>Add some comments</h5></div>
+  <div class="arrow-right"><i class="fa fa-arrow-right"></i></div>
+  <div class="col-sm-2"><button type="button" class="button btn-lg" (click)="onSelect4()"><i class="fa fa-image" style="font-size:72px;color:#548779;"></i></button>
+    <h5>Order a photobook</h5></div>
+  <div class="arrow-right"><i class="fa fa-arrow-right"></i></div>
+  <div class="col-sm-2"><button type="button" class="button btn-lg" (click)="onSelect5()"><i class="fa fa-smile-o" style="font-size:72px;color:#548779;"></i></button>
+    <h5>Enjoy the photobook and memories which it keeps</h5></div>
+</div>
+
+<div class="info-make-photo">
+  <p [hidden]="IsHidden1">“Why do you take pictures?”
+    Taking pictures helps you to hang on to those memories a little longer. Hardly anyone makes photo albums anymore
+    but remember how you felt and how your smile spread across your face when you would hold those prints in your hand?
+    We’re looking at pictures on our screens more than ever but the feeling of wanting to hold on to memories is still the same.
+    Take pictures of you, of your family, friends, ake memories for the future...
+  </p>
+</div>
+<div class="info-upload-photo">
+  <p [hidden]="IsHidden2">Uploading on our website, is as simple as saying YES. So, you have only to go to create new album,
+    and tap on button <strong>Upload photo</strong>. After that you can visualize your photos on "My photos" subsection. So it's easy. Enjoy the process!</p>
+</div>
+<div class="info-add-comment">
+  <p [hidden]="IsHidden3">If your photos don't hold enough information, you can add it by yourself. So, you can comment on each photo,
+  add a title or a description, as you wish. Comment on a photo, or on all. Add your comments and ideas of others. Complete your memories
+  for future, for remembering these moments. Keep the feelings, events and satate in those photos and commentaries.</p>
+</div>
+<div class="info-order-book">
+  <p [hidden]="IsHidden4">After all these "hard" work, is time to enjoy the result. The newly created photo book coulb be saved,
+  downloaded in pdf format or printed. Si, it's up o you which method you choose. We recomand to send th photo book for printing, in order
+  to touch the result of your work. Nohing can be compared with a physical touch of the memories, when you hold them in your arms.
+    YOu can send the photo book for printing by tapping on <strong>Order</strong> button. </p>
+</div>
+<div class="info-enjoy">
+  <p [hidden]="IsHidden5">
+    Smile and enjoy the moment! We printed the photo book for you and delivered. We are happy that YOU are our client.
+    Enjoy the product, give as a gift or keep it for your dears. The best wishes and we are waiting for the future collaboration.
+  </p>
+</div>
+<!--with popovers-->
+<!--<div class="row container-manual">-->
+  <!--<div class="col-sm-2"><button type="button" class="button btn-lg" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">-->
+    <!--<i class="fa fa-camera-retro" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Make some photos</h5></div>-->
+  <!--<div class="arrow-right"><i class="fa fa-arrow-right"></i></div>-->
+  <!--<div class="col-sm-2"><button type="button" class="button btn-lg"><i class="fa fa-cloud-upload" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Upload in our application</h5></div>-->
+  <!--<div class="arrow-right"><i class="fa fa-arrow-right"></i></div>-->
+  <!--<div class="col-sm-2"><button type="button" class="button btn-lg"><i class="fa fa-comments" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Add some comments</h5></div>-->
+  <!--<div class="arrow-right"><i class="fa fa-arrow-right"></i></div>-->
+  <!--<div class="col-sm-2"><button type="button" class="button btn-lg"><i class="fa fa-image" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Order a photobook</h5></div>-->
+  <!--<div class="arrow-right"><i class="fa fa-arrow-right"></i></div>-->
+  <!--<div class="col-sm-2"><button type="button" class="button btn-lg"><i class="fa fa-smile-o" style="font-size:72px;color:#548779;"></i></button>-->
+    <!--<h5>Enjoy the photobook and memories which it keeps</h5></div>-->
+<!--</div>-->
+

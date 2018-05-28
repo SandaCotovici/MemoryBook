@@ -1,31 +1,3 @@
-
-<!--<div class="bootstrap-vertical-nav">-->
-
-  <!--<button class="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
-    <!--<span class="">Menu</span>-->
-  <!--</button>-->
-
-  <!--<div class="collapse" id="collapseExample">-->
-    <!--<ul class="nav flex-column" id="exCollapsingNavbar3">-->
-      <!--<li class="nav-item">-->
-        <!--<a class="nav-link active" routerLink="profile">Profile</a>-->
-      <!--</li>-->
-      <!--<li class="nav-item">-->
-        <!--<a class="nav-link" routerLink="album" routerLinkActive="active">Albums</a>-->
-      <!--</li>-->
-      <!--<li class="nav-item">-->
-        <!--<a class="nav-link" routerLink="photoCollection">Photo Collection</a>-->
-      <!--</li>-->
-      <!--<li class="nav-item">-->
-      <!--<a class="nav-link" routerLink="userManual">User manual</a>-->
-      <!--</li>-->
-      <!--<li class="nav-item">-->
-        <!--<a class="nav-link" routerLink="orders">My orders</a>-->
-      <!--</li>-->
-    <!--</ul>-->
-  <!--</div>-->
-
-<!--</div>-->
 <header>
   <div class="bs-component">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,25 +15,30 @@
             <a class="nav-link" [routerLink]="['/dashboard/albums']">Albums</a>
           </li>
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="['/dashboard/about']">Pricing</a>
+            <a class="nav-link" [routerLink]="['/dashboard/pricing']">Pricing</a>
           </li>
           <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" [routerLink]="['/dashboard/about']">About</a>
-          </li>
-          <li class="nav-item dropdown" routerLinkActive="active">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Authentication</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" routerLink="/auth/signin">Sign In</a>
-              <a class="dropdown-item" routerLink="/auth/signup">Sign Up</a>
-              <a class="dropdown-item" routerLink="/auth/logout">Log out</a>
-            </div>
           </li>
         </ul>
 
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          <button class="btn btn-secondary my-2 my-sm-0 log-out" type="submit">Log out</button>
+          <!--<button class="btn btn-secondary my-2 my-sm-0 log-out" type="submit">Log out</button>-->
+
+          <div class="btn-group" dropdown>
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-secondary dropdown-toggle btn-auth"
+                    aria-controls="dropdown-basic">
+              Authentication <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu auth-menu"
+                role="menu" aria-labelledby="button-basic">
+              <li role="menuitem"><a class="dropdown-item" [routerLink]="['/dashboard/auth/signin']">Sign In</a></li>
+              <li role="menuitem"><a class="dropdown-item" [routerLink]="['/dashboard/auth/signup']">Sign Up</a></li>
+              <li role="menuitem"><a class="dropdown-item" [routerLink]="['/dashboard/home']">Log out</a></li>
+            </ul>
+          </div>
         </form>
       </div>
     </nav>
